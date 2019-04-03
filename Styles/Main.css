@@ -1,0 +1,152 @@
+﻿@import url('reset.css');
+
+html {
+	scroll-behavior: smooth;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: black;
+}
+
+body {
+	padding: 0 0 4rem 0;
+	text-align: center;
+	background-image: url('../Images/devon_gwen_edit.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title {
+	font-size: 6rem;
+	color: white;
+	padding: 4rem; 0 4rem;
+	mix-blend-mode: difference;
+}
+
+#bootstrap-nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#navbar {
+	width: 100%;
+	background-color: rgba(0,0,0,0.25);
+}
+
+#navitem {
+	padding: 1rem 0.5rem;
+	display: inline-block;
+}
+
+@keyframes navbtn_stop_hover {
+	0% {
+		filter: opacity(25%);
+		color: grey;
+		background-color: white;
+		border-radius: 30px;
+	}
+	
+	100% {
+		filter: opacity(100%);
+		color: white;
+		border-radius: 5px;
+	}
+}
+
+#navbtn {
+	padding: 0.5rem 1rem;
+	font-size: 2rem;
+	text-decoration: none;
+	color: white;
+	border-style: none;
+	border-width: thin;
+	border-color: white;
+	border-radius: 5px;
+	animation-name: navbtn_stop_hover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes navbtn_hover {
+	0% {
+		color: white;
+	}
+	
+	100% {
+		filter: opacity(25%);
+		color: grey;
+		background-color: white;
+		border-radius: 30px;
+	}
+}
+
+	#navbtn:hover {
+		animation-name: navbtn_hover;
+		animation-duration: 0.25s;
+		animation-fill-mode: forwards;
+	}
+
+#mainpage {
+	padding: 10rem;
+	margin: auto;
+	min-height: 800px;
+	color: white;
+}
+
+	#mainpage h2 {
+		mix-blend-mode: difference;
+		font-size: 2rem;
+	}
+
+	#mainpage a {
+		color: cyan;
+		text-decoration: none;
+	}
+
+		#mainpage a:hover {
+			opacity: 0.5;
+			text-decoration: none;
+		}
+
+#flash_game {
+	float: left;
+	padding-bottom: 2rem;
+}
+
+	#flash_game iframe {
+		max-width: 100%;
+	}
+
+#green_screen {
+	float: right;
+}
+
+	#green_screen iframe {
+		max-width: 100%;
+	}
+
+@media screen and (max-width: 1600px) {
+	html {
+		font-size: 90%;
+	}
+
+	#flash_game {
+		float: none;
+	}
+
+	#green_screen {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 60%;
+	}
+}
